@@ -1,4 +1,4 @@
-package es.vqs.adapter;
+package es.vqs.adapter.tarjetas;
 
 public class Ordenador {
 	private SD ranuraSD;

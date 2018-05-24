@@ -1,4 +1,4 @@
-package es.vqs.adapter;
+package es.vqs.adapter.tarjetas;
 
 public class AdaptadorMicroSDaSD implements SD {
 
@@ -10,7 +10,8 @@ public class AdaptadorMicroSDaSD implements SD {
 
 	@Override
 	public String mandarDatosPorPinesSD() {
-		String infoMicro = new String(this.mSD.transmitirInformacion());
+		byte[] bytes = this.mSD.transmitirInformacion();
+		String infoMicro = new String(bytes);
 		return "#" + infoMicro;
 
 	}

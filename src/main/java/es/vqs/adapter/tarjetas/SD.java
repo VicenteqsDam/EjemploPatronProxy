@@ -1,4 +1,4 @@
-package es.vqs.adapter;
+package es.vqs.adapter.tarjetas;
 
 public interface SD {
 	public String mandarDatosPorPinesSD();
