@@ -7,7 +7,7 @@ public class MovilNuevo {
 		this.cargador = _cargador;
 	}
 	
-	public void cargarMovil() {
-		this.cargarMovil();
+	public void cargarMovil() throws InterruptedException {
+		this.cargador.cargarMovilesUSBC();
 	}
 }
