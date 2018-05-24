@@ -11,7 +11,7 @@ public class HibernateUtils {
 	private String url = "jdbc:mysql://178.62.217.41/entornos";
 
 	private String user = "root";
-	private String pass = "fempa2018";
+	private String pass = "asdasd";
 
 	public void imprimirNombres() {
 		String nombre;
