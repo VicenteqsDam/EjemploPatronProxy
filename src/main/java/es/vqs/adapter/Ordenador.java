@@ -8,6 +8,6 @@ public class Ordenador {
 	}
 
 	public void leerDatosDeLaTarjetaSD() {
-		this.ranuraSD.mandarDatosPorPinesSD();
+		System.out.println(this.ranuraSD.mandarDatosPorPinesSD());
 	}
 }

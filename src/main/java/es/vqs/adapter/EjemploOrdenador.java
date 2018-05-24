@@ -10,7 +10,7 @@ public class EjemploOrdenador {
 		o.conectarSDaRanura(miTarjeta);
 		o.leerDatosDeLaTarjetaSD();
 		
-		SamsungMicroSD microSD = new SamsungMicroSD();
+		MicroSDSony microSD = new MicroSDSony();
 		microSD.setDatos("Tengo ganas de irme a casa");
 		
 		AdaptadorMicroSDaSD adpt = new AdaptadorMicroSDaSD();

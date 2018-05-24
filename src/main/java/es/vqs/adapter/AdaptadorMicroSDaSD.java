@@ -2,16 +2,16 @@ package es.vqs.adapter;
 
 public class AdaptadorMicroSDaSD implements SD {
 
-	private SamsungMicroSD mSD;
+	private MicroSDSony mSD;
 	
-	public void setMicroSD(SamsungMicroSD smsd) {
+	public void setMicroSD(MicroSDSony smsd) {
 		this.mSD = smsd;
 	}
 
 	@Override
-	public void mandarDatosPorPinesSD() {
-		String infoMicro = this.mSD.transmitirInformacion();
-		System.out.println("#" + infoMicro);
+	public String mandarDatosPorPinesSD() {
+		String infoMicro = new String(this.mSD.transmitirInformacion());
+		return "#" + infoMicro;
 
 	}
 
