@@ -1,16 +1,21 @@
 package es.vqs.template;
 
 public abstract class DocumentoPlantilla {
-	
+	String documento;
 	//Es final, no se puede modificar ("overridear")
 	public final void generarDocumento() {
+		System.out.println(this.escribirEncabezado());
+		System.out.println(this.escribirCuerpo());
+		System.out.println(this.escribirPieDocumento());
 		
 	}
 	
-	public abstract void escribirEncabezado();
+	public abstract String escribirEncabezado();
 	
-	public abstract void escribirCuerpo();
+	public abstract String escribirCuerpo();
 	
-	public abstract void escribirPieDocumento();
+	public final String escribirPieDocumento() {
+		return "Un abrazo";
+	}
 
 }
